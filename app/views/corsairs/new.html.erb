@@ -1,0 +1,9 @@
+<h1> Creer un gossip</h1>
+<%= form_tag (gossips_path) do %>
+
+<%= label_tag 'first_name', 'first_name' %>
+    <%= text_field_tag 'first_name' %>
+    <%= label_tag 'age', 'age' %>
+    <%= text_field_tag 'age' %>
+    <%= submit_tag "Inscription"%>
+<% end %>

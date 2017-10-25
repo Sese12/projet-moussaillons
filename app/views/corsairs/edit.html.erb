@@ -1,0 +1,9 @@
+<h1> Editer/h1>
+
+<%= form_tag (corsair_path) do %>
+<%= label_tag 'age', 'age' %>
+    <%= text_field_tag 'age' %>
+    <%= label_tag 'first_name', 'first_name' %>
+    <%= text_field_tag 'first_name' %>
+    <%= submit_tag "editer le profil"%>
+<% end %>

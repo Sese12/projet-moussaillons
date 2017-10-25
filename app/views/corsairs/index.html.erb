@@ -1,0 +1,16 @@
+<h1>Listes des gossips</h1>
+ 
+<table>
+  <tr>
+    <th>first_name</th>
+    <th>age</th>
+  </tr>
+ 
+  <% @gcorsairs.each do |article| %>
+    <tr>
+      <td><%= corsairs.first_name%></td>
+      <td><%= corsair.age %></td>
+      <td><%= link_to 'Inscription', corsair_path(corsair) %></td>
+    </tr>
+  <% end %>
+</table>
