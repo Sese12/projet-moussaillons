@@ -3,7 +3,21 @@
 <%= form_tag (corsair_path) do %>
 <%= label_tag 'age', 'age' %>
     <%= text_field_tag 'age' %>
+    
     <%= label_tag 'first_name', 'first_name' %>
     <%= text_field_tag 'first_name' %>
+
+    <%= label_tag 'bio', 'bio' %>
+    <%= text_field_tag 'bio' %>
+    
+    <%= label_tag 'slack_handle', 'ton slack' %>
+    <%= text_field_tag 'slack_handle' %>
+
+    <%= label_tag 'github_handle', 'github_handle' %>
+    <%= text_field_tag 'github_handle' %>
+
+
+   
+
     <%= submit_tag "editer le profil"%>
 <% end %>

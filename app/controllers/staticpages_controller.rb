@@ -1,4 +1,7 @@
 class StaticpagesController < ApplicationController
-  def home
+  def index
+
+    @corsairs = Corsair.all
   end
 end
+ 

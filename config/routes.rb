@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
  
-  root 'application##home'
+  root 'corsairs#index'
+	resources:corsairs
 
 end

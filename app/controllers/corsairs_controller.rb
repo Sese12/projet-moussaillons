@@ -23,7 +23,7 @@ def edit
 
   def update 
     @corsair = Corsair.find(params[:id])
-    if @gcorsair.update(corsair_params)
+    if @corsair.update(corsair_params)
       redirect_to @corsairir
       else 
       render 'edit'
@@ -33,4 +33,6 @@ end
 private
    def corsair_params
     params.require(:corsair).permit(:first_name, :age)
+end
+
 end

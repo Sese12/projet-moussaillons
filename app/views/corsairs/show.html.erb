@@ -1,5 +1,16 @@
 <h1><%=@gcorsair.first_name %></h1>
 <h2> <%= @corsair.age %> </h2>
 
+<% if @moussaillon.slack_handle != nil %>
+    <p>Voici le pseudo Slack de <%=@moussaillon.first_name%> : <%=@moussaillon.slack_handle%></p>
+<% else %>
+    <p><%=@moussaillon.first_name%> n'a pas encore renseigné son pseudo Slack !</p>
+<% end %>
 
 <p> <%= link_to("Editer le moussaillon", edit_moussaillon_path) %></p>
+
+<%= check_box_tag(:likeness) %>
+<%= label_tag(:Kebab, "Je préfere les kebabs") %>
+<%= check_box_tag(:likeness) %>
+<%= label_tag(:Hummus, "Je prefere le hummus") %>
+ 
